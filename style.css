@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4% 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 2%;
+    border-radius: 2%;
+}
+
+.small-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+    margin-bottom: 4%;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.box-info h2 {
+    margin-bottom: 1%;
+    font-weight: 100;
+}
+
+.box-info p {
+    display: contents;
+}
+
+.add-to-cart-button {
+    width: 62%;
+    padding: 1% 2%;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+    background-color: #45a049;
+}
+
+.shipping-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.box input[type="radio"],
+.box-info,
+.box p,
+.box .select-form {
+    padding: 0% 31% 0% 0%;
+}
+
+.select-form {
+    display: flex;
+    margin: 2% 0%;
+    position: relative;
+    right: 5%;
+}
+
+.label {
+    display: flex;
+    margin: 2% 0%;
+}
+
+.label label {
+    margin: 0 6vw;
+    position: relative;
+    right: 10vw;
+}
+
+.select {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 6%;
+}
+
+.select select {
+    width: 14vw;
+    height: 6vh;
+}
+
+.small-box p {
+    position: relative;
+    left: 25%;
+    font-weight: 600;
+}
+
+.box.selected {
+    background-color: #f2f2f2;
+}
+.select-form p{
+    padding: 0 1%;
+}
+
+@media screen and (max-width: 834px) and (orientation: portrait) {
+    .select select {
+        width: 14vw;
+        height: 4vh;
+    }
+
+    .add-to-cart-button {
+        height: 4vh;
+    }
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    .box {
+        width: 80%;
+    }
+
+    .box-info {
+        position: relative;
+        left: 8vw;
+    }
+
+    .label label {
+        margin: 0 6vw;
+        position: relative;
+        right: 4vw;
+    }
+
+    .select select {
+        width: 15vw;
+        height: 5vh;
+    }
+
+    .select-form {
+        margin: 0% 0%;
+    }
+
+    .box-info h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .box-info p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .add-to-cart-button {
+        width: 77vw;
+        height: 6vh;
+    }
+
+    .shipping-container p span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .box input[type="radio"],
+    .box-info,
+    .box p,
+    .box .select-form {
+        padding: -1% 28% 0% 0%;
+    }
+
+    .select-form p {
+        position: relative;
+        bottom: 1vh;
+    }
+
+}
+
+@media screen and (max-width: 915px) and (orientation: landscape) {
+    .select select {
+        width: 14vw;
+        height: 11vh;
+    }
+
+    .select-form p {
+        position: relative;
+        bottom: 3vh;
+    }
+
+
+}
