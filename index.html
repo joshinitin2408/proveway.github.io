@@ -4,148 +4,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bundle & Save</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Bundle and Save</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1 style="color: cadetblue;">Bundle & Save</h1>
-        <div class="box">
-            <div class="small-box">
-                <input type="radio" name="bundle" value="box1" data-price="195" data-pairs="1">
-                <div class="box-info">
-                    <h2>1 Pair</h2>
-                    <p>DKK 195</p>
-                </div>
-                <p>50% OFF</p>
-            </div>
-            <div class="select">
-                <div class="label">
-                    <label>Size</label>
-                    <label>Color</label>
-                </div>
-                <div class="select-form">
-                    <p>#1</p>
-                    <select id="size1">
-                        <option value="s">Small</option>
-                        <option value="m">Medium</option>
-                        <option value="l">Large</option>
-                    </select>
-                    <select id="color1" style="margin-left: 5%;">
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="green">Green</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="small-box">
-                <input type="radio" name="bundle" value="box2" data-price="345" data-pairs="2">
-                <div class="box-info">
-                    <h2>2 Pair</h2>
-                    <p>DKK 345</p>
-                </div>
-                <p>40% OFF</p>
-            </div>
-            <div class="select">
-                <div class="label">
-                    <label>Size</label>
-                    <label>Color</label>
-                </div>
-                <div class="select-form">
-                    <p>#1</p>
-                    <select id="size2">
-                        <option value="s">Small</option>
-                        <option value="m">Medium</option>
-                        <option value="l">Large</option>
-                    </select>
-                    <select id="color2" style="margin-left: 5%;">
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="green">Green</option>
-                    </select>
-                </div>
-                <div class="select-form">
-                    <p>#2</p>
-                    <select id="size3">
-                        <option value="s">Small</option>
-                        <option value="m">Medium</option>
-                        <option value="l">Large</option>
-                    </select>
-                    <select id="color3" style="margin-left: 5%;">
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="green">Green</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="small-box">
-                <input type="radio" name="bundle" value="box3" data-price="528" data-pairs="3">
-                <div class="box-info">
-                    <h2>3 Pair</h2>
-                    <p>DKK 528</p>
-                </div>
-                <p>60% OFF</p>
-            </div>
-            <div class="select">
-                <div class="label">
-                    <label>Size</label>
-                    <label>Color</label>
-                </div>
-                <div class="select-form">
-                    <p>#1</p>
-                    <select id="size4">
-                        <option value="s">Small</option>
-                        <option value="m">Medium</option>
-                        <option value="l">Large</option>
-                    </select>
-                    <select id="color4" style="margin-left: 5%;">
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="green">Green</option>
-                    </select>
-                </div>
-                <div class="select-form">
-                    <p>#2</p>
-                    <select id="size5">
-                        <option value="s">Small</option>
-                        <option value="m">Medium</option>
-                        <option value="l">Large</option>
-                    </select>
-                    <select id="color5" style="margin-left: 5%;">
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="green">Green</option>
-                    </select>
-                </div>
-                <div class="select-form">
-                    <p>#3</p>
-                    <select id="size6">
-                        <option value="s">Small</option>
-                        <option value="m">Medium</option>
-                        <option value="l">Large</option>
-                    </select>
-                    <select id="color6" style="margin-left: 5%;">
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="green">Green</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="shipping-container">
-            <p style="color: cadetblue;font-weight: 600;">Free 2 Day Shipping</p>
-            <p>Total : <span id="total-price" style="font-weight: 600;">DKK 0</span></p>
-        </div>
-        <button class="add-to-cart-button">Add to Cart</button>
-    </div>
-    <script src="script.js"></script>
 
+    <div class="container">
+        <div class="heading">
+            <h1 class="px-25">Bundle & Save</h1>
+        </div>
+
+        <!-- Box-1 -->
+        <div id="box-1" class="box px-25 py-18 mt-35">
+            <div class="inner-ctlr">
+                <div class="rdo-btn-cntr">
+                    <div class="radioBtn">
+                        <div></div>
+                    </div>
+                    <div class="ml-25">
+                        <div class="rdo-btn-dv1">1 Pair</div>
+                        <div class="rdo-btn-dv2">DKK 195.00</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="rdo-btn-dv2"> 50% OFF </div>
+                </div>
+            </div>
+
+            <div class="size-color-boxes-container">
+                <div class="size-container">
+                    <div class="s-controller">
+                        <h2>Size</h2>
+                        <div class="s-selector-1">
+                            <select>
+                                <option value="s" selected>Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                            </select>
+                            <span class="num">#1</span>
+                        </div>
+                    </div>
+                    <div class="c-controller">
+                        <h2>Color</h2>
+                        <div class="c-selector-3">
+                            <select>
+                                <option value="blue" selected>blue</option>
+                                <option value="red">red</option>
+                                <option value="yellow">yellow</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box-2 -->
+        <div id="box-2" class="box my-18 px-25 py-18">
+            <div class="inner-ctlr">
+                <div class="rdo-btn-cntr">
+                    <div class="radioBtn">
+                        <div></div>
+                    </div>
+                    <div class="ml-25">
+                        <div class="rdo-btn-dv1">2 Pair</div>
+                        <div class="rdo-btn-dv2">DKK 345.00</div>
+                    </div>
+                </div>
+                <div class="cross-text"> DKK 195.00 </div>
+                <div style="text-align:right;">
+                    <div class="rdo-btn-dv2" style="color:#007F61; margin-bottom: 5px;">MOST POPULAR</div>
+                    <div class="rdo-btn-dv2"> 40% OFF </div>
+                </div>
+            </div>
+
+            <div class="size-color-boxes-container">
+                <div class="size-container">
+                    <div class="s-controller">
+                        <h2>Size</h2>
+                        <div class="s-selector-1">
+                            <select>
+                                <option value="s" selected>Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                            </select>
+                            <span class="num">#1</span>
+                        </div>
+                        <div class="s-selector-2">
+                            <select>
+                                <option value="s" selected>Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                            </select>
+                            <span class="num">#2</span>
+                        </div>
+                    </div>
+                    <div class="c-controller">
+                        <h2>Color</h2>
+                        <div class="c-selector-3">
+                            <select>
+                                <option value="blue" selected>blue</option>
+                                <option value="red">red</option>
+                                <option value="yellow">yellow</option>
+                            </select>
+                        </div>
+                        <div class="c-selector-2">
+                            <select>
+                                <option value="blue" selected>blue</option>
+                                <option value="red">red</option>
+                                <option value="yellow">yellow</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box-3 -->
+        <div id="box-3" class="box my-18 px-25 py-18">
+            <div class="inner-ctlr">
+                <div class="rdo-btn-cntr">
+                    <div class="radioBtn">
+                        <div></div>
+                    </div>
+                    <div class="ml-25">
+                        <div class="rdo-btn-dv1">3 Pair</div>
+                        <div class="rdo-btn-dv2">DKK 528.00</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="rdo-btn-dv2"> 60% OFF </div>
+                </div>
+            </div>
+
+            <div class="size-color-boxes-container">
+                <div class="size-container">
+                    <div class="s-controller">
+                        <h2>Size</h2>
+                        <div class="s-selector-1">
+                            <select>
+                                <option value="s" selected>Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                            </select>
+                            <span class="num">#1</span>
+                        </div>
+                        <div class="s-selector-2">
+                            <select>
+                                <option value="s" selected>Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                            </select>
+                            <span class="num">#2</span>
+                        </div>
+                        <div class="s-selector-2">
+                            <select>
+                                <option value="s" selected>Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                            </select>
+                            <span class="num">#3</span>
+                        </div>
+                    </div>
+                    <div class="c-controller">
+                        <h2>Color</h2>
+                        <div class="c-selector-3">
+                            <select>
+                                <option value="blue" selected>blue</option>
+                                <option value="red">red</option>
+                                <option value="yellow">yellow</option>
+                            </select>
+                        </div>
+                        <div class="c-selector-2">
+                            <select>
+                                <option value="blue" selected>blue</option>
+                                <option value="red">red</option>
+                                <option value="yellow">yellow</option>
+                            </select>
+                        </div>
+                        <div class="c-selector-2">
+                            <select>
+                                <option value="blue" selected>blue</option>
+                                <option value="red">red</option>
+                                <option value="yellow">yellow</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shiping details -->
+        <div class="shiping-div">
+            <div style="color:#007F61;" class="rdo-btn-dv2">Free 2 Day Shipping</div>
+            <div>
+                <span style="font-size: 18.461px;">Total : </span>
+                <span class="rdo-btn-dv2" id="total">DKK 360.00</span>
+            </div>
+        </div>
+
+        <!-- Add to Cart button -->
+        <div class="add-to-cart-btn">
+            <span>+ Add to Cart</span>
+        </div>
+        <p class="owner">&copy; <em>Powered by Pumper</em></p>
+    </div>
+
+    <script src="./script.js" defer></script>
 </body>
 
 </html>
-<!-- helo -->
